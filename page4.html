@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I Am really really Sorry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.tenor.com/3bDvSVpiwjoAAAAj/peach-goma-phone.gif">
+        <h1>Sorry... Jannu</h1>
+        <h2>tumhe hurt krne k liye🥹</h2>
+		  <h3>maan v jawoo na 🤞</h3>
+        <div class="btn-group">
+            <a href="yes.html" class="btn yes" style="transform: scale(1.1);">Yes</a>
+            <button id="noBtn" class="btn no">No</button>
+        </div>
+    </div>
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        noBtn.addEventListener('mouseover', () => {
+            noBtn.style.position = 'absolute';
+            noBtn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            noBtn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        });
+        // If she somehow clicks it, take her to the next "No" page anyway
+        noBtn.onclick = () => window.location.href = "page3.html";
+    </script>
+</body>
+</html>
